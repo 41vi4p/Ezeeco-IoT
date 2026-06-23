@@ -2,11 +2,11 @@
 
 <div align="center">
 
-![Version](https://img.shields.io/badge/version-3.1.2-blue?style=flat-square)
+![Version](https://img.shields.io/badge/version-3.2.2-blue?style=flat-square)
 ![Platform](https://img.shields.io/badge/platform-Android%20%7C%20iOS%20%7C%20Web-lightgrey?style=flat-square)
 ![Expo SDK](https://img.shields.io/badge/Expo%20SDK-56-000020?style=flat-square&logo=expo)
 ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black)
-![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)
+![License](https://img.shields.io/badge/license-GPL--v3-green?style=flat-square)
 ![Made by](https://img.shields.io/badge/made%20by-Project%20Cell%20CRCE-purple?style=flat-square)
 
 **Open-source React Native app to control IoT devices connected to ESP32 via Firebase.**  
@@ -390,18 +390,32 @@ Please follow the versioning convention in `app.json` and document changes in `d
 
 ## License
 
-MIT © 2025 [Project Cell CRCE](https://github.com/your-org)
+This project is licensed under the **GNU General Public License v3.0 (GPL-3.0)**.
+
+You are free to use, modify, and distribute this software under the terms of the GPL-3.0.  
+Any modified versions must also be released under the same license.
+
+See the [LICENSE](./LICENSE) file for the full license text, or visit [gnu.org/licenses/gpl-3.0](https://www.gnu.org/licenses/gpl-3.0.html).
+
+© 2025 Project Cell CRCE
 
 ---
 
 ## Credits
 
 Built and maintained by **Project Cell CRCE**  
-Fr. Conceição Rodrigues College of Engineering, Mumbai
+Fr. Conceição Rodrigues College of Engineering, Bandra, Mumbai — University of Mumbai
 
-| Role | Name |
-|---|---|
-| Lead Developer | [@41vi4p](https://github.com/41vi4p) |
+### Development Team
+
+| Name | Role | Links |
+|---|---|---|
+| **David Porathur** | Full Stack Developer | [GitHub](https://github.com/41vi4p) · [LinkedIn](https://www.linkedin.com/in/david-porathur-33780228a) · [Portfolio](https://davidporathur.vercel.app) · [Instagram](https://www.instagram.com/davidp2529.sh) |
+| **Pranav Koradiya** | Full Stack Developer | [GitHub](https://github.com/08pranav) · [LinkedIn](https://linkedin.com/in/pranavkoradiya) · [Portfolio](https://pranavkoradiya.com) · [Instagram](https://www.instagram.com/pranav85_) |
+| **Deon Raj** | Full Stack Developer | — |
+| **Yash Masaye** | Full Stack Developer | [Instagram](https://www.instagram.com/yash.masaye) |
+| **Naimish Purohit** | Full Stack Developer | [Instagram](https://www.instagram.com/naimish.purohit) |
+| **Mangalam Jaiswal** | Full Stack Developer | [Instagram](https://www.instagram.com/__manxglam__) |
 
 ---
 
