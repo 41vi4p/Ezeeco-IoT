@@ -59,7 +59,7 @@ The app handles:
 | Toggle relay / lights via app | ✅ Live |
 | Live online/offline device status | ✅ Live |
 | Room grouping & shared access (join code) | ✅ Live |
-| ESP32-CAM image capture & viewer | ✅ Live |
+| ESP32-CAM image capture & viewer | 🔜 Coming Soon |
 | Full activity log (all user actions) | ✅ Live |
 | Dark mode | ✅ Live |
 | Responsive layout (phone / tablet / web) | ✅ Live |
