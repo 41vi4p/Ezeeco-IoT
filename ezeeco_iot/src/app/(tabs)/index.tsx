@@ -8,7 +8,7 @@ import { useResponsive } from '@/hooks/use-responsive';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useRouter } from 'expo-router';
 import { LinearGradient } from 'expo-linear-gradient';
-import { Bell, Search, Plus, KeyRound, LogOut, Settings, User, FileText, ChevronDown, Star, Cpu, Home, Wifi } from 'lucide-react-native';
+import { Bell, Search, Plus, KeyRound, LogOut, Settings, User, FileText, ChevronDown, Star, Cpu, Home, Wifi } from 'lucide-react-native'; // ChevronDown used by profile menu
 import { ref, set, serverTimestamp, onValue } from 'firebase/database';
 import { database } from '@/lib/firebase';
 import { useAuth } from '@/contexts/AuthContext';

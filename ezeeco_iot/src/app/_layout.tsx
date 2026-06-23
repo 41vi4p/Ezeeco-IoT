@@ -66,6 +66,8 @@ function RootLayout() {
               <Stack.Screen name="privacy-security" options={{ headerShown: false, presentation: 'card' }} />
               <Stack.Screen name="logs" options={{ headerShown: false, presentation: 'card' }} />
               <Stack.Screen name="help-support" options={{ headerShown: false, presentation: 'card' }} />
+              <Stack.Screen name="ir-control" options={{ headerShown: false, presentation: 'card' }} />
+              <Stack.Screen name="ir-remote/[id]" options={{ headerShown: false, presentation: 'card' }} />
               <Stack.Screen name="scenes/create" options={{ headerShown: false, presentation: 'card' }} />
               <Stack.Screen name="+not-found" options={{ headerShown: false }} />
             </Stack>

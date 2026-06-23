@@ -1,5 +1,47 @@
 # CHANGELOG
 
+## [3.2.2] - 2026-06-23
+
+### Updated — IR Remote Control (two-level navigation)
+- `ir-control.tsx` is now a **card grid home** — each remote gets a coloured gradient card showing icon, name, and coded-button count; a dashed "New Remote" card always sits at the end
+- Tapping a card navigates to `/ir-remote/{id}` (new stack screen)
+- Added `src/app/ir-remote/[id].tsx` — full remote detail page with send grid, edit list, learn/send, add/rename/delete buttons, reorder, and delete-remote
+- Cards use 10 rotating gradients so each remote has a distinct colour
+
+## [3.2.1] - 2026-06-23
+
+### Updated — Bottom tab bar
+- Replaced "Add" tab with "IR" tab (Radio icon) pointing to the IR Remote Control page
+- "Add" tab is now hidden (`href: null`) but `/add-device` route still works via navigation
+- Created `(tabs)/ir-tab.tsx` re-export so IR control renders inside the tab group with the bar visible
+- Increased tab bar height from 64 → 72 px and set `paddingTop/paddingBottom: 10` + `includeFontPadding: false` so labels are fully visible and not clipped
+- Removed IR Remote banner from Home screen (now accessible directly from the tab bar)
+
+## [3.2.0] - 2026-06-23
+
+### New — IR Remote Control page (`/ir-control`)
+- Full IR remote control powered by ESP8266 (blaster D5/GPIO14, receiver D6/GPIO12)
+- Create multiple named remotes with custom emoji icons (TV, AC, fan, etc.)
+- **Learn mode**: app writes `ir_command/{userId}` to RTDB → ESP8266 activates receiver for 10 s → captured code written back to `ir_result/{userId}` → app saves to Firestore
+- **Send mode**: tap any button → command pushed to RTDB → ESP8266 blasts IR signal
+- **Edit mode**: add, rename, delete, and reorder buttons (up/down arrows)
+- Buttons show learned protocol + hex code when coded; yellow dot when uncoded
+- Live countdown banner during learn mode; success/timeout feedback
+- Added `src/services/irService.ts` — Firestore remote management + RTDB command channel
+- Added `firmware/esp8266_ir_control/esp8266_ir_control.ino` — supports NEC, SAMSUNG, SONY, LG, PANASONIC, RC5, RC6, DISH protocols
+- IR Remote banner added to Home screen linking to `/ir-control`
+
+### Updated — Activity Logs page (`/logs`)
+- Category filter tabs: All, Device, Room, User, Security, System
+- Per-category colour-coded badges on every log entry
+- Smart icon per action type (toggle → zap, add → plus, delete → trash, login → key, etc.)
+- Shows `details` text under each action
+- Pull-to-refresh and load-more pagination
+- Entry count shown in header
+
+### Updated — README.md
+- Full open-source project README with badges, features, setup guides, Firebase rules, ESP32/ESP32-CAM/ESP8266 instructions, data structure reference
+
 ## [3.1.2] - 2026-06-23
 
 ### Security — Route protection / auth guard

@@ -1,5 +1,5 @@
 import { Tabs } from 'expo-router';
-import { Home, Grid3X3, CirclePlus, Shield, Settings } from 'lucide-react-native';
+import { Home, Grid3X3, Shield, Settings, Radio } from 'lucide-react-native';
 import { View, StyleSheet } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useTheme } from '@/hooks/use-theme';
@@ -11,6 +11,7 @@ export default function TabsLayout() {
   const isDark = useIsDark();
   const insets = useSafeAreaInsets();
   const { tabBarSideM } = useResponsive();
+
   return (
     <Tabs
       screenOptions={{
@@ -20,9 +21,9 @@ export default function TabsLayout() {
           bottom: insets.bottom + 12,
           left: tabBarSideM,
           right: tabBarSideM,
-          height: 64,
-          borderRadius: 32,
-          backgroundColor: isDark ? '#333333' : '#FFFFFF',
+          height: 72,
+          borderRadius: 36,
+          backgroundColor: isDark ? '#2A2A2A' : '#FFFFFF',
           borderTopWidth: 0,
           elevation: 20,
           shadowColor: '#000',
@@ -39,17 +40,17 @@ export default function TabsLayout() {
           flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'center',
-          paddingVertical: 8,
+          paddingTop: 10,
+          paddingBottom: 10,
         },
         tabBarIconStyle: {
-          marginTop: 0,
-          marginBottom: 2,
+          marginBottom: 3,
         },
         tabBarLabelStyle: {
           fontSize: 10,
           fontWeight: '600',
-          marginTop: 0,
-          marginBottom: 0,
+          lineHeight: 12,
+          includeFontPadding: false,
         },
       }}
     >
@@ -78,12 +79,12 @@ export default function TabsLayout() {
       />
 
       <Tabs.Screen
-        name="add"
+        name="ir-tab"
         options={{
-          title: 'Add',
+          title: 'IR',
           tabBarIcon: ({ color, focused }) => (
             <View style={[styles.iconWrap, focused && { backgroundColor: theme.tabIconSelected + '20' }]}>
-              <CirclePlus size={20} color={color} strokeWidth={focused ? 2.5 : 2} />
+              <Radio size={20} color={color} strokeWidth={focused ? 2.5 : 2} />
             </View>
           ),
         }}
@@ -113,7 +114,8 @@ export default function TabsLayout() {
         }}
       />
 
-      {/* Hidden — route still works */}
+      {/* Hidden — routes still accessible via navigation */}
+      <Tabs.Screen name="add"    options={{ href: null }} />
       <Tabs.Screen name="scenes" options={{ href: null }} />
     </Tabs>
   );
@@ -122,8 +124,8 @@ export default function TabsLayout() {
 const styles = StyleSheet.create({
   iconWrap: {
     width: 38,
-    height: 28,
-    borderRadius: 14,
+    height: 26,
+    borderRadius: 13,
     alignItems: 'center',
     justifyContent: 'center',
   },
