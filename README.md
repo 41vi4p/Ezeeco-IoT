@@ -410,12 +410,12 @@ Fr. Conceição Rodrigues College of Engineering, Bandra, Mumbai — University 
 
 | Name | Role | Links |
 |---|---|---|
-| **David Porathur** | Full Stack Developer | [GitHub](https://github.com/41vi4p) · [LinkedIn](https://www.linkedin.com/in/david-porathur-33780228a) · [Portfolio](https://davidporathur.vercel.app) · [Instagram](https://www.instagram.com/davidp2529.sh) |
-| **Pranav Koradiya** | Full Stack Developer | [GitHub](https://github.com/08pranav) · [LinkedIn](https://linkedin.com/in/pranavkoradiya) · [Portfolio](https://pranavkoradiya.com) · [Instagram](https://www.instagram.com/pranav85_) |
+| **David Porathur** | Full Stack Developer | [GitHub](https://github.com/41vi4p) · [LinkedIn](https://www.linkedin.com/in/david-porathur-33780228a) · [Portfolio](https://davidporathur.vercel.app) |
+| **Pranav Koradiya** | Full Stack Developer | [GitHub](https://github.com/08pranav) · [LinkedIn](https://linkedin.com/in/pranavkoradiya) · [Portfolio](https://pranavkoradiya.com) |
 | **Deon Raj** | Full Stack Developer | — |
-| **Yash Masaye** | Full Stack Developer | [Instagram](https://www.instagram.com/yash.masaye) |
-| **Naimish Purohit** | Full Stack Developer | [Instagram](https://www.instagram.com/naimish.purohit) |
-| **Mangalam Jaiswal** | Full Stack Developer | [Instagram](https://www.instagram.com/__manxglam__) |
+| **Yash Masaye** | Full Stack Developer | — |
+| **Naimish Purohit** | Full Stack Developer | — |
+| **Mangalam Jaiswal** | Full Stack Developer | — |
 
 ---
 
