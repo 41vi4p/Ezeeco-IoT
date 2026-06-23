@@ -1,5 +1,20 @@
 # CHANGELOG
 
+## [3.1.2] - 2026-06-23
+
+### Security — Route protection / auth guard
+- Added `AuthGuard` component in root `_layout.tsx` that uses `useSegments` + `useRouter` to enforce access control
+- Unauthenticated users can only access `(auth)/welcome`, `(auth)/login`, `(auth)/register`, `(auth)/onboarding`, `about`, and `credits`; any other route redirects to `/(auth)/welcome`
+- Authenticated users visiting any `(auth)` route are redirected to `/(tabs)` automatically
+- Updated `index.tsx` to redirect logged-in users directly to `/(tabs)` instead of always going through welcome
+
+## [3.1.1] - 2026-06-23
+
+### Security — Fix moderate uuid vulnerability (GHSA-w5hq-g745-h8pq)
+- Added `overrides.uuid >= 11.1.1` in `package.json` to force a safe version of `uuid` across the full dependency tree
+- Affected chain: `uuid@7.0.3` ← `xcode` ← `@expo/config-plugins` ← `expo-splash-screen` (build-time tools only, not bundled into the app)
+- `npm audit` now reports 0 vulnerabilities
+
 ## [3.1.0] - 2026-06-23
 
 ### Updated — Responsive Layout (all screens)

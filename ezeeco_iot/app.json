@@ -2,7 +2,7 @@
   "expo": {
     "name": "ezeeco_iot",
     "slug": "ezeeco_iot",
-    "version": "3.1.0",
+    "version": "3.1.2",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "ezeecoiot",

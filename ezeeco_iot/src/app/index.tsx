@@ -1,5 +1,8 @@
 import { Redirect } from 'expo-router';
+import { useAuth } from '@/contexts/AuthContext';
 
 export default function Index() {
-  return <Redirect href="/(auth)/welcome" />;
+  const { isAuthenticated, isLoading } = useAuth();
+  if (isLoading) return null;
+  return <Redirect href={isAuthenticated ? '/(tabs)' : '/(auth)/welcome'} />;
 }
